@@ -1,60 +1,58 @@
 ---
-import MainHead from '../components/MainHead.astro';
-import Footer from '../components/Footer/index.jsx';
-import Nav from '../components/Nav/index.jsx';
+	import MainHead from '../components/MainHead.astro';
+	import Footer from '../components/Footer/index.jsx';
+	import Nav from '../components/Nav/index.jsx';
 ---
 
 <html lang="en">
-	<head>
-		<MainHead title="About | Jeanine White" description="About Jeanine White Lorem Ipsum" />
-		<style lang="scss">
-			.heroImg {
-				max-height: 24rem;
-				object-fit: cover;
-				overflow: hidden;
 
-				img {
-					width: 100%;
-				}
-			}
+<head>
+	<MainHead title="About | Max Rojas" description="About Max Rojas" />
+	<style lang="scss">
+		.heroImg {
+			max-height: 30rem;
+			object-fit: cover;
+			overflow: hidden;
 
-			.bio {
-				font-size: var(--f-u1);
-				line-height: 2;
+			img {
+				width: 80%;
+				margin: 0 auto;
 			}
-		</style>
-	</head>
-	<body>
-		<Nav />
-		<div class="wrapper">
-			<h1>About Jeanine</h1>
-			<div class="heroImg">
-				<img width="1400" height="350" src="https://images.unsplash.com/photo-1581977012607-4091712d36f9?auto=format&fit=crop&w=1400&h=350&q=75" />
-			</div>
-			<div class="bio wrapper wrapper__readable mt8">
-				<p>
-					Cream cheese say cheese stinking bishop. Brie fondue hard cheese bocconcini feta camembert de normandie babybel airedale. Red leicester swiss manchego mascarpone pepper
-					jack airedale fromage frais ricotta. Cheese and biscuits cauliflower cheese boursin.
-				</p>
-				<p>
-					Pepper jack cheesy feet cheese slices. Halloumi port-salut queso caerphilly roquefort cheese slices cheesy feet rubber cheese. Cheese slices smelly cheese pecorino
-					macaroni cheese feta blue castello roquefort edam. Babybel pepper jack airedale cheddar fromage frais manchego.
-				</p>
-				<p>
-					Cauliflower cheese lancashire macaroni cheese. Cheeseburger babybel cheese on toast airedale cauliflower cheese who moved my cheese roquefort paneer. Stinking bishop
-					cheddar taleggio port-salut port-salut stinking bishop cheesy grin babybel. Blue castello feta everyone loves brie.
-				</p>
-				<p>
-					Goat squirty cheese cut the cheese. Cheese and wine cheddar fondue airedale cottage cheese camembert de normandie feta babybel. Rubber cheese melted cheese pecorino
-					port-salut fondue gouda cheese on toast cheesy feet. Feta edam everyone loves cheese strings camembert de normandie.
-				</p>
-				<p>
-					Caerphilly monterey jack goat. Squirty cheese cheesy grin hard cheese cheese strings cheese and biscuits croque monsieur smelly cheese danish fontina. Swiss cheese
-					triangles everyone loves mascarpone cheese on toast who moved my cheese lancashire cheeseburger. Fromage frais fromage frais cheese and biscuits stinking bishop
-					cauliflower cheese.
-				</p>
-			</div>
+		}
+
+		.bio {
+			font-size: var(--f-u1);
+			line-height: 2;
+		}
+	</style>
+</head>
+
+<body>
+	<Nav />
+	<div class="wrapper">
+		<h1 class="text-center">About Max</h1>
+		<div class="heroImg flex-auto">
+			<img width="1400" height="350" src="/assets/profile.jpg" />
 		</div>
-		<Footer />
-	</body>
+		<div class="bio wrapper wrapper__readable mt8 text-justify leading-relaxed">
+			<p>
+				<strong>Max Rojas Vargas</strong> was born and raised in a rural farming village in the province of Cartago,
+				Costa Rica.
+			</p>
+			<p>
+				His formal studies Max received at the University of Costa Rica, thus beginning his immersion into the world of
+				art. Rojas, one of Costa Ric's established watercolorists, immerses himself in his environment and transposes
+				this experience to paper or canvas. The viewer is able to feel the humidity of the swollen clouds, the crispness
+				of the first steam of light after the storm breaks, swirling hues caught in nature's phenomena.
+			</p>
+			<p>
+				Max's acrylics are vigorous, energy-charged renditions conscious of space, surface and color of Costa Rica.
+				Rojas also forges metal, carves in wood and weaves on looms he builds himself; total corporal involvement that
+				creates art full of activity, be it conceptual or physical.
+			</p>
+		</div>
+	</div>
+	<Footer />
+</body>
+
 </html>
