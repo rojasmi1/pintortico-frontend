@@ -23,6 +23,7 @@ const featuredProject = projects[0];
 			.hero {
 				position: relative;
 				overflow: hidden;
+				height: 88vw;
 
 				@media (min-width: $w-s) {
 					height: 45vw;
@@ -31,8 +32,12 @@ const featuredProject = projects[0];
 
 			.img {
 				display: block;
-				width: 100%;
-				height: auto;
+				width: auto;
+				height: 100%;
+				@media (min-width: $w-s) {
+					width: 100%;
+					height: auto;
+				}
 			}
 
 			.gradient,
@@ -191,7 +196,6 @@ const featuredProject = projects[0];
 				height="1131"
 				class="img"
 				src="/assets/bg.jpg"
-				sizes="(max-width: 800px) 800px, (max-width: 1200px) 1200px, (max-width: 1600px) 1600px, (max-width: 2400px) 2400px, 1200px"
 			/>
 			<div class="gradient"></div>
 			<div class="gradient2"></div>
