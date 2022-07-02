@@ -9,14 +9,19 @@
 <head>
 	<MainHead title="About | Max Rojas" description="About Max Rojas" />
 	<style lang="scss">
+		$w-s: 750px;
+
 		.heroImg {
 			max-height: 30rem;
 			object-fit: cover;
 			overflow: hidden;
 
 			img {
-				width: 80%;
+				width: 100%;
 				margin: 0 auto;
+				@media (min-width: $w-s) {
+					width: 30%;
+				}
 			}
 		}
 
@@ -32,7 +37,7 @@
 	<div class="wrapper">
 		<h1 class="text-center">About Max</h1>
 		<div class="heroImg flex-auto">
-			<img width="1400" height="350" src="/assets/profile.jpg" />
+			<img width="1695" height="1280" src="/assets/profile.jpg" />
 		</div>
 		<div class="bio wrapper wrapper__readable mt8 text-justify leading-relaxed">
 			<p>
