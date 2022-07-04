@@ -1,0 +1,16 @@
+---
+import ArtWork from '../../layouts/ArtWork.astro';
+import { getAllArtWorks, getArtWork } from '../../api';
+
+export async function getStaticPaths() {
+  const artWorks = await getAllArtWorks();
+  return artWorks.map(artWork => ({ params: { id: artWork.sys.id } }));
+}
+
+const artWork = await getArtWork(Astro.params['id'] as string);
+
+---
+
+<ArtWork content={artWork}>
+  {artWork.fields.dataSheet}
+</ArtWork>

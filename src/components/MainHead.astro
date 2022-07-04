@@ -1,6 +1,12 @@
 ---
 import '../styles/global.scss';
-const { title = 'Max Rojas: Watercolor Artist', description = 'The personal site of Max Rojas' } = Astro.props;
+
+export interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { title = 'Max Rojas: Watercolor Artist', description = 'The personal site of Max Rojas' } = Astro.props as Props;
 ---
 
 <meta charset="UTF-8" />

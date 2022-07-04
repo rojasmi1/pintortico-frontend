@@ -18,6 +18,7 @@
     "sass": "^1.52.2"
   },
   "dependencies": {
+    "contentful": "^9.1.32",
     "preact": "^10.7.3"
   }
 }
