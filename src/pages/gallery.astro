@@ -7,7 +7,6 @@ import { getCategories, getArtWorksByCategory } from '../api';
 
 const categories = await getCategories();
 const artWorks = await getArtWorksByCategory(categories[0].sys.id);
-
 ---
 
 <html lang="en">
